@@ -12,7 +12,6 @@
 		702EFE5E1D3F5C3C0075157B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 702EFE5D1D3F5C3C0075157B /* Assets.xcassets */; };
 		702EFE611D3F5C3C0075157B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 702EFE5F1D3F5C3C0075157B /* LaunchScreen.storyboard */; };
 		702EFE691D3F5C980075157B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702EFE681D3F5C980075157B /* ViewController.swift */; };
-		702EFE6B1D3F5E370075157B /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702EFE6A1D3F5E370075157B /* NextViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +22,6 @@
 		702EFE601D3F5C3C0075157B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		702EFE621D3F5C3C0075157B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		702EFE681D3F5C980075157B /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		702EFE6A1D3F5E370075157B /* NextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +56,6 @@
 			children = (
 				702EFE521D3F5C3C0075157B /* AppDelegate.swift */,
 				702EFE681D3F5C980075157B /* ViewController.swift */,
-				702EFE6A1D3F5E370075157B /* NextViewController.swift */,
 				702EFE5A1D3F5C3C0075157B /* Main.storyboard */,
 				702EFE5D1D3F5C3C0075157B /* Assets.xcassets */,
 				702EFE5F1D3F5C3C0075157B /* LaunchScreen.storyboard */,
@@ -139,7 +136,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				702EFE691D3F5C980075157B /* ViewController.swift in Sources */,
-				702EFE6B1D3F5E370075157B /* NextViewController.swift in Sources */,
 				702EFE531D3F5C3C0075157B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,6 +290,7 @@
 				702EFE671D3F5C3C0075157B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
