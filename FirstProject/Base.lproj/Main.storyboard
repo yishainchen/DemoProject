@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -56,41 +55,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Yosemite" translatesAutoresizingMaskIntoConstraints="NO" id="dwu-up-YFa">
-                                <rect key="frame" x="-4" y="64" width="328" height="404"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Yosemite" translatesAutoresizingMaskIntoConstraints="NO" id="dwu-up-YFa">
+                                <rect key="frame" x="-4" y="64" width="324" height="276"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="優勝美地國家公園" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wsx-sk-Gp4">
-                                <rect key="frame" x="45" y="466" width="230" height="69"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="優勝美地國家公園" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wsx-sk-Gp4">
+                                <rect key="frame" x="45" y="341" width="230" height="69"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kLI-OU-a8m">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kLI-OU-a8m">
                                 <rect key="frame" x="138" y="530" width="45" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="45" id="Dhf-s3-ucu"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
                                     <segue destination="bd4-mu-aUg" kind="push" id="rbw-vG-w7V"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="優勝美地國家公園是美國加州中東部橫跨圖奧勒米郡、馬里波薩郡和馬德拉郡東部部分地區的國家公園。該公園占地747,956英畝並延伸到了橫跨內華達山脈西坡。" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8aJ-Qo-lQb">
+                                <rect key="frame" x="38" y="409" width="240" height="99"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.64002205339999996" green="1" blue="0.86543070779999998" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="dwu-up-YFa" firstAttribute="leading" secondItem="cAE-yn-JgO" secondAttribute="leadingMargin" constant="-20" id="1dI-sp-IOG"/>
-                            <constraint firstItem="dwu-up-YFa" firstAttribute="centerX" secondItem="cAE-yn-JgO" secondAttribute="centerX" id="42M-Xq-KeW"/>
-                            <constraint firstItem="dwu-up-YFa" firstAttribute="centerX" secondItem="Wsx-sk-Gp4" secondAttribute="centerX" id="8gK-s5-M65"/>
-                            <constraint firstItem="kLI-OU-a8m" firstAttribute="top" secondItem="dwu-up-YFa" secondAttribute="bottom" constant="62" id="FCw-rE-CVA"/>
-                            <constraint firstItem="IRK-2z-dmj" firstAttribute="top" secondItem="Wsx-sk-Gp4" secondAttribute="bottom" constant="33" id="M1r-xU-Y5q"/>
-                            <constraint firstItem="Wsx-sk-Gp4" firstAttribute="top" secondItem="a5S-ET-s7H" secondAttribute="bottom" constant="402" id="Rho-xV-rwG"/>
-                            <constraint firstItem="Wsx-sk-Gp4" firstAttribute="leading" secondItem="cAE-yn-JgO" secondAttribute="leadingMargin" constant="29" id="UgF-aa-BCx"/>
-                            <constraint firstItem="dwu-up-YFa" firstAttribute="top" secondItem="a5S-ET-s7H" secondAttribute="bottom" id="g3e-3O-W1c"/>
-                            <constraint firstItem="IRK-2z-dmj" firstAttribute="top" secondItem="dwu-up-YFa" secondAttribute="bottom" constant="100" id="qOW-Fv-4vu"/>
-                            <constraint firstItem="IRK-2z-dmj" firstAttribute="top" secondItem="kLI-OU-a8m" secondAttribute="bottom" constant="8" symbolic="YES" id="qmJ-WQ-uoS"/>
-                            <constraint firstItem="kLI-OU-a8m" firstAttribute="centerX" secondItem="Wsx-sk-Gp4" secondAttribute="centerX" id="shH-mR-6ey"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="u1q-dW-ZDJ"/>
                 </viewController>
@@ -110,40 +99,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Lake Tekapo" translatesAutoresizingMaskIntoConstraints="NO" id="esz-14-rIY">
-                                <rect key="frame" x="0.0" y="64" width="320" height="404"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="404" id="An3-UF-1C0"/>
-                                </constraints>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Lake Tekapo" translatesAutoresizingMaskIntoConstraints="NO" id="esz-14-rIY">
+                                <rect key="frame" x="0.0" y="64" width="320" height="279"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="特卡波湖" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XR4-FJ-l8q">
-                                <rect key="frame" x="126" y="487" width="68" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dOZ-Na-WBA">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dOZ-Na-WBA">
                                 <rect key="frame" x="139" y="526" width="43" height="34"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="43" id="jph-ft-CW7"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
                                     <segue destination="DRs-t8-cfr" kind="push" id="oy3-CY-NuV"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="特卡波湖是紐西蘭的湖泊，位於南島中部，由坎特伯雷負責管轄，長27公里、寬6公里，面積87平方公里，海拔高度700米，平均水深69米，最大水深120米，蓄水量6立方公里。" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="CvB-gt-INc">
+                                <rect key="frame" x="40" y="406" width="240" height="100"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="特卡波湖" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XR4-FJ-l8q">
+                                <rect key="frame" x="124" y="360" width="73" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.83938594700000002" green="1" blue="0.70621781319999999" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="esz-14-rIY" firstAttribute="leading" secondItem="Xbf-Fd-bDT" secondAttribute="leading" id="69t-mY-uKA"/>
-                            <constraint firstAttribute="trailing" secondItem="esz-14-rIY" secondAttribute="trailing" id="Bsu-95-WlV"/>
-                            <constraint firstItem="ej1-sY-UH2" firstAttribute="top" secondItem="dOZ-Na-WBA" secondAttribute="bottom" constant="8" symbolic="YES" id="E9g-6l-IaT"/>
-                            <constraint firstItem="esz-14-rIY" firstAttribute="centerX" secondItem="XR4-FJ-l8q" secondAttribute="centerX" id="Mon-Mv-V6a"/>
-                            <constraint firstItem="esz-14-rIY" firstAttribute="top" secondItem="l9G-iD-iYB" secondAttribute="bottom" id="V35-V6-i22"/>
-                            <constraint firstItem="XR4-FJ-l8q" firstAttribute="top" secondItem="esz-14-rIY" secondAttribute="bottom" constant="19" id="the-vV-8QX"/>
-                            <constraint firstItem="dOZ-Na-WBA" firstAttribute="centerX" secondItem="XR4-FJ-l8q" secondAttribute="centerX" id="yN7-Re-e04"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="A9D-89-8zq"/>
                 </viewController>
@@ -163,40 +143,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Kirkju" translatesAutoresizingMaskIntoConstraints="NO" id="iCc-dw-X2T">
-                                <rect key="frame" x="0.0" y="59" width="320" height="404"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Kirkju" translatesAutoresizingMaskIntoConstraints="NO" id="iCc-dw-X2T">
+                                <rect key="frame" x="0.0" y="59" width="320" height="281"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="冰島教會山" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iNL-Pi-4oA">
-                                <rect key="frame" x="118" y="483" width="85" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="PK3-mI-bD8"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="冰島教會山" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iNL-Pi-4oA">
+                                <rect key="frame" x="115" y="371" width="90" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6B2-Ab-70i">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hello World!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6B2-Ab-70i">
                                 <rect key="frame" x="103" y="519" width="115" height="36"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="36" id="8kw-V1-cKs"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" red="0.1137254902" green="0.34901960780000002" blue="0.56862745100000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="教會山（Kirkjufell）坐落在冰島西部的斯奈山半島（Snaefellsnes Peninsula）沿岸，這裡是最受歡迎的山景拍攝地。爬到山頂極具挑戰性，但是山頂上的風景別有一番風味。" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bGV-du-iU6">
+                                <rect key="frame" x="40" y="406" width="240" height="100"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.37113060590000002" green="0.69160306449999998" blue="0.45413218189999999" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="iNL-Pi-4oA" firstAttribute="top" secondItem="iCc-dw-X2T" secondAttribute="bottom" constant="20" id="5Bg-tm-KnF"/>
-                            <constraint firstItem="6B2-Ab-70i" firstAttribute="leading" secondItem="OL9-cD-DjM" secondAttribute="leadingMargin" constant="87" id="DUC-np-Em4"/>
-                            <constraint firstAttribute="trailing" secondItem="iCc-dw-X2T" secondAttribute="trailing" id="M9I-fK-pB1"/>
-                            <constraint firstItem="iCc-dw-X2T" firstAttribute="top" secondItem="OL9-cD-DjM" secondAttribute="topMargin" constant="59" id="Qfz-4h-epk"/>
-                            <constraint firstItem="Rew-Bx-2bF" firstAttribute="top" secondItem="6B2-Ab-70i" secondAttribute="bottom" constant="13" id="SVj-hI-u2d"/>
-                            <constraint firstItem="iNL-Pi-4oA" firstAttribute="centerX" secondItem="6B2-Ab-70i" secondAttribute="centerX" id="atY-SX-aBR"/>
-                            <constraint firstItem="iCc-dw-X2T" firstAttribute="leading" secondItem="OL9-cD-DjM" secondAttribute="leading" id="cVX-K3-Ugy"/>
-                            <constraint firstItem="6B2-Ab-70i" firstAttribute="top" secondItem="iNL-Pi-4oA" secondAttribute="bottom" constant="15" id="ckt-Cb-idl"/>
-                            <constraint firstItem="iCc-dw-X2T" firstAttribute="centerX" secondItem="iNL-Pi-4oA" secondAttribute="centerX" id="dGW-c4-0gI"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="b9b-C8-th4"/>
                 </viewController>

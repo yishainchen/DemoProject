@@ -12,6 +12,7 @@
 		702EFE5E1D3F5C3C0075157B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 702EFE5D1D3F5C3C0075157B /* Assets.xcassets */; };
 		702EFE611D3F5C3C0075157B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 702EFE5F1D3F5C3C0075157B /* LaunchScreen.storyboard */; };
 		702EFE691D3F5C980075157B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702EFE681D3F5C980075157B /* ViewController.swift */; };
+		7062D0C21D41F7B700FFAB91 /* 風景敘述 in Resources */ = {isa = PBXBuildFile; fileRef = 7062D0C11D41F7B700FFAB91 /* 風景敘述 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		702EFE601D3F5C3C0075157B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		702EFE621D3F5C3C0075157B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		702EFE681D3F5C980075157B /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7062D0C11D41F7B700FFAB91 /* 風景敘述 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "風景敘述"; path = "../../../pics/風景敘述"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				702EFE5A1D3F5C3C0075157B /* Main.storyboard */,
 				702EFE5D1D3F5C3C0075157B /* Assets.xcassets */,
 				702EFE5F1D3F5C3C0075157B /* LaunchScreen.storyboard */,
+				7062D0C11D41F7B700FFAB91 /* 風景敘述 */,
 				702EFE621D3F5C3C0075157B /* Info.plist */,
 			);
 			path = FirstProject;
@@ -125,6 +128,7 @@
 				702EFE611D3F5C3C0075157B /* LaunchScreen.storyboard in Resources */,
 				702EFE5E1D3F5C3C0075157B /* Assets.xcassets in Resources */,
 				702EFE5C1D3F5C3C0075157B /* Main.storyboard in Resources */,
+				7062D0C21D41F7B700FFAB91 /* 風景敘述 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
